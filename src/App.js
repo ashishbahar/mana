@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import "./App.css";
+import Features from "./components/Features";
+import Header from "./components/Header";
+import OwnTheJoy from "./components/OwnTheJoy.jsx";
+import SecondHomeSec from "./components/SecondHomeSec";
+import OwnerPerspective from "./components/OwnerPerspectives";
+import Email from "./components/Email";
+import Featured from "./components/Featured";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <SecondHomeSec />
+      <Features />
+      <OwnTheJoy />
+      <OwnerPerspective />
+      <Email />
+      <Featured />
+      <Footer />
     </div>
   );
 }
